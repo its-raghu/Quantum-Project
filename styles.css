@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Poppins";
 }
 .container {
@@ -44,7 +45,7 @@ nav > ul > li {
 }
 .col-2 img {
   max-width: 100%;
-  padding: 50px 0;
+  padding: 70px 0;
 }
 .col-2 h1 {
   font-weight: 400;
