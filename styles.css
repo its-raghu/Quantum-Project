@@ -37,9 +37,7 @@ nav > ul > li {
   text-align: center;
   cursor: pointer;
 }
-/* .border {
-  border-bottom: 1px solid pink;
-} */
+
 .row {
   display: flex;
   align-items: center;
@@ -88,6 +86,14 @@ button {
   font-size: 20px;
   animation: slideFromDown 1.5s cubic-bezier(0.87, 0, 0.13, 1) forwards;
   opacity: 0;
+}
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.image-row img {
+  height: 100px;
 }
 
 /* Keyframe Animation */
