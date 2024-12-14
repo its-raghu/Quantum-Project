@@ -18,6 +18,7 @@
 }
 .logo > img {
   width: 80px;
+  cursor: pointer;
 }
 nav > ul {
   display: flex;
@@ -31,6 +32,7 @@ nav > ul > li {
   text-transform: uppercase;
   padding: 18px;
   text-align: center;
+  cursor: pointer;
 }
 /* .border {
   border-bottom: 1px solid pink;
@@ -42,6 +44,8 @@ nav > ul > li {
 .col-2 {
   flex-basis: 50%;
   min-width: 300px;
+  position: relative;
+  overflow: hidden;
 }
 .col-2 img {
   max-width: 100%;
@@ -50,14 +54,22 @@ nav > ul > li {
 .col-2 h1 {
   font-weight: 400;
   font-size: 55px;
+  animation: slideFromUp 1s ease-in-out forwards;
+  opacity: 0;
 }
+
 .col-2 h2 {
   font-weight: 700;
   font-size: 60px;
+  animation: slideFromLeft 1s ease-out forwards;
+  opacity: 0;
 }
+
 .col-2 p {
   padding-top: 30px;
   padding-right: 80px;
+  animation: openingThrough 1s ease-out forwards;
+  opacity: 0;
 }
 button {
   background-color: #3853a3;
@@ -69,4 +81,36 @@ button {
   margin-top: 40px;
   font-family: "Roboto";
   font-size: 20px;
+}
+
+/* Keyframe Animation */
+@keyframes slideFromUp {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes openingThrough {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
