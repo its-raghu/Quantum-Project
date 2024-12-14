@@ -51,24 +51,26 @@ nav > ul > li {
 .col-2 img {
   max-width: 100%;
   padding: 70px 0;
+}
+.main-img {
   animation: fadeOut 1s ease-out forwards;
   opacity: 0;
 }
-.col-2 h1 {
+.header-h1 {
   font-weight: 400;
   font-size: 55px;
   animation: slideFromUp 1s ease-in-out forwards;
   opacity: 0;
 }
 
-.col-2 h2 {
+.header-h2 {
   font-weight: 700;
   font-size: 60px;
   animation: slideFromLeft 1s ease-out forwards;
   opacity: 0;
 }
 
-.col-2 p {
+.header-p {
   padding-top: 30px;
   padding-right: 80px;
   animation: openingThrough 1s ease-out forwards;
@@ -90,10 +92,29 @@ button {
 .image-row {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin: 30px 0px;
 }
 .image-row img {
   height: 100px;
+}
+
+/*Secton Part*/
+
+.exp-color {
+  background-color: #f7f9ff;
+}
+.experience {
+  text-align: center;
+  padding-top: 70px;
+}
+.experience p {
+  color: #3853ac;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.experience h1 {
+  font-size: 40px;
+  font-weight: 500;
 }
 
 /* Keyframe Animation */
