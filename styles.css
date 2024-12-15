@@ -121,18 +121,43 @@ button {
 }
 .exp-p {
   padding-right: 20px;
+}
+.exp-p,
+.card p {
   line-height: 28px;
   opacity: 0.5;
 }
 .col-3 {
   display: flex;
   justify-content: space-between;
-  padding: 50px 0;
+  padding-top: 50px;
 }
 .card {
-  background-color: aqua;
-  margin: 20px;
+  margin: 10px;
   padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-out;
+  max-width: 350px;
+}
+.card:hover {
+  background-color: #e5efff;
+}
+.card img {
+  width: 80px;
+}
+.card h3 {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 20px 0px;
+}
+.card p {
+  margin-bottom: 20px;
+}
+.card a {
+  text-decoration: none;
+}
+.first-row {
+  margin-bottom: -25px;
 }
 
 /* Keyframe Animation */
