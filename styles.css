@@ -98,8 +98,11 @@ button {
 }
 .image-row img {
   height: 100px;
+  filter: grayscale(1);
 }
-
+.image-row img:hover {
+  filter: grayscale(0);
+}
 /*Secton Part*/
 
 .exp-color {
@@ -188,6 +191,7 @@ button {
   height: 350px;
   flex-basis: 32.5%;
   border-radius: 10px;
+  cursor: grab;
 }
 .product-images {
   display: flex;
@@ -199,6 +203,7 @@ button {
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0.1px 0.1px 5px 1px #e5efff;
+  cursor: pointer;
 }
 .pro-img:hover {
   animation: borderEffect 0s ease-in forwards;
