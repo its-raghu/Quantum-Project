@@ -192,13 +192,25 @@ button {
 .product-images {
   display: flex;
   justify-content: space-between;
+  margin: 35px 0;
 }
 .pro-img {
-  min-width: 250px;
-  min-height: 400px;
-  flex-basis: 32%;
-  border: #3853a3 solid;
+  flex-basis: 31.5%;
   border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0.1px 0.1px 5px 1px #e5efff;
+}
+.pro-img:hover {
+  animation: borderEffect 0s ease-in forwards;
+  animation-delay: 0.3s;
+  border: #3853a3 solid 2px;
+  box-shadow: none;
+}
+.pro-img img {
+  width: 100%;
+}
+.pro-img p {
+  font-size: 20px;
 }
 
 /* Keyframe Animation */
@@ -250,5 +262,14 @@ button {
   to {
     transform: scale(1);
     opacity: 1;
+  }
+}
+@keyframes borderEffect {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.989);
+    border: #3853a3 solid 2px;
   }
 }
