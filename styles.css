@@ -171,14 +171,34 @@ button {
 .caraousel-row {
   display: flex;
   justify-content: space-between;
+  margin: 30px 0;
+}
+.image-one {
+  background-image: url("https://vedyahtech.com/wp-content/uploads/2023/07/2-1.jpg");
+}
+.image-two {
+  background-image: url("https://vedyahtech.com/wp-content/uploads/2023/07/3-1.jpg");
+}
+.image-three {
+  background-image: url("https://vedyahtech.com/wp-content/uploads/2023/07/3-1.jpg");
 }
 .elementor-carousel-image {
-  background-image: url("https://vedyahtech.com/wp-content/uploads/2023/07/2-1.jpg");
-  background-repeat: no-repeat;
-  min-width: 150px;
-  min-height: 150px;
-  flex-basis: 30%;
+  background-size: contain;
+  min-width: 250px;
+  height: 350px;
+  flex-basis: 32.5%;
   border-radius: 10px;
+}
+.product-images {
+  display: flex;
+  justify-content: space-between;
+}
+.pro-img {
+  min-width: 250px;
+  min-height: 400px;
+  flex-basis: 32%;
+  border: #3853a3 solid;
+  border-radius: 15px;
 }
 
 /* Keyframe Animation */
