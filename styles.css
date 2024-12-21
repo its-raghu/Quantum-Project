@@ -34,6 +34,14 @@ nav > ul > li {
   text-align: center;
   cursor: pointer;
 }
+nav li:hover {
+  color: rgb(42, 196, 196);
+  cursor: pointer;
+}
+nav li a {
+  text-decoration: none;
+  color: rgb(42, 196, 196);
+}
 
 .row {
   display: flex;
